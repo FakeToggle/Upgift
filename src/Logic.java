@@ -86,7 +86,7 @@ public class Logic {
                                 morse.append(code).append(" ");
                         }
 
-                        return morse.toString();
+                        return morse.toString().trim();
                 }
                 catch (Exception e) {
                         return "Error: " + e.getMessage();
