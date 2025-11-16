@@ -63,7 +63,7 @@ public class Logic {
         }
         public String engToMorse(String english) {
                 try {
-                        english = english.trim().toUpperCase();
+                        english = english.toUpperCase();
 
                         if (english.isEmpty()) {
                                 throw new IllegalArgumentException("Input cannot be empty");
@@ -86,7 +86,7 @@ public class Logic {
                                 morse.append(code).append(" ");
                         }
 
-                        return morse.toString().trim();
+                        return morse.toString();
                 }
                 catch (Exception e) {
                         return "Error: " + e.getMessage();
@@ -94,7 +94,7 @@ public class Logic {
         }
         public String morseToEng(String morse) {
                 try {
-                        morse = morse.trim();
+
 
                         if (morse.isEmpty()) {
                                 throw new IllegalArgumentException("Input cannot be empty");
