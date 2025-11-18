@@ -31,6 +31,6 @@ public class TestClass {
 
     @Test
     void testEngToMorseWithSpace() {
-        assertEquals(".... . .--- .--. .- -.. .. --.", logic.engToMorse("hej pa dig"));
+        assertEquals(".... . .--- .--. .- -.. .. --.", logic.engToMorse("Hej pa dig"));
     }
 }
